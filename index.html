@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEYZ HOSTING</title>
+  <style>
+    /* Background gradien bergerak */
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(-45deg, #7b2ff7, #0072ff, #7b2ff7, #1C1E2B);
+      background-size: 700% 600%;
+      animation: gradientMove 4s ease infinite;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      overflow-x: hidden;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Bintang */
+    .stars {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0;
+      display: flex; align-items: center;
+      padding: 12px 20px;
+      background: #0d0d1a;
+      z-index: 1000;
+      gap: 10px;
+    }
+    .logo { 
+      height: 40px; 
+      width: 40px; 
+      border-radius: 50%; 
+      border: 2px solid #fff; 
+      object-fit: cover; 
+    }
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+      background: linear-gradient(to right, #3b82f6, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Foto Tengah */
+    .foto-tengah {
+      max-width: 160px;
+      border-radius: 100px;
+      margin: 100px auto 20px;
+      display: block;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    .teks-sambutan {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Card Section */
+    .card {
+      background: #111827;
+      border-radius: 30px;
+      margin: 20px auto;
+      padding: 30px 20px;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 20px;
+      background: linear-gradient(to right, #3b82f6, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+    .card h3 i {
+      font-size: 40px; /* ukuran logo */
+      display: block;
+      margin-bottom: 8px;
+    }
+    /* Warna ikon khusus */
+    .card h3 i.fa-whatsapp { color: #25D366; }
+    .card h3 i.fa-telegram { color: #0088cc; }
+
+    /* Tombol Gradien */
+    .btn {
+      margin: 15px auto 0;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #3b82f6, #a855f7);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      display: inline-block;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #ccc;
+      padding: 20px;
+    }
+    footer a {
+      color: #3b82f6;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+  </style>
+
+  <!-- Font Awesome buat ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Stars Background -->
+  <div class="stars"></div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="https://files.catbox.moe/ptv6me.jpg" alt="Logo" class="logo">
+    <div class="title">KEYZ HOSTING</div>
+  </div>
+
+  <!-- Foto Tengah -->
+  <img src="https://files.catbox.moe/5zsa4j.jpg" alt="Foto Tengah" class="foto-tengah">
+
+  <!-- Teks Sambutan -->
+  <div class="teks-sambutan">✨ 𝙎𝙀𝙇𝘼𝙈𝘼𝙏 𝘿𝘼𝙏𝘼𝙉𝙂 𝘿𝙄 𝙒𝙀𝘽𝙎𝙄𝙏𝙀 𝙆𝙀𝙔𝙕 𝙃𝙊𝙎𝙏𝙄𝙉𝙂 ✨</div>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="card">
+      <h3>
+        <i class="fa-brands fa-whatsapp"></i>
+        SALURAN WHATSAPP
+      </h3>
+      <button class="btn" onclick="window.location.href='https://whatsapp.com/channel/0029Vb6fNaD9Gv7SFRiXL10G'">
+        KLIK
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>
+        <i class="fa-brands fa-whatsapp"></i>
+        CONTACT 1
+        (UTAMA)
+      </h3>
+      <button class="btn" onclick="window.location.href='https://wa.me/6283163523607'">
+        KLIK
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>
+        <i class="fa-brands fa-whatsapp"></i>
+        CONTACT 2 (CADANGAN)
+      </h3>
+      <button class="btn" onclick="window.location.href='https://wa.me/62881010884120'">
+        KLIK
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>
+        <i class="fa-brands fa-telegram"></i>
+        TELEGRAM
+      </h3>
+      <button class="btn" onclick="window.location.href='https://t.me/Keyztamfan'">
+        KLIK
+      </button>
+    </div>
+     <div class="card">
+      <h3>
+        <i class="fa-brands fa-whatsapp"></i>
+        LIST GRUP
+      </h3>
+      <button class="btn" onclick="window.location.href='https://keyzz234.github.io/Jawa/'">
+        KLIK
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <h6>© KEYZ-JAWA</h6>
+  <footer>
+  </footer>
+
+  <!-- Script Bintang -->
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    const numberOfStars = 200; // jumlah bintang
+
+    for (let i = 0; i < numberOfStars; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = Math.random() * 100 + "%";
+      star.style.left = Math.random() * 100 + "%";
+      star.style.animationDuration = (2 + Math.random() * 3) + "s";
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
